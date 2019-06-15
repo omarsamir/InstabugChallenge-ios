@@ -17,4 +17,6 @@ This task is to make a UItableView displays movies from API moreover, user can u
 # Other Files
 - Extentions: handle categories of cocoa framework models.
 - Constants: contains all needed constants.
-  
+
+# Unit testing 
+Simple unit test method to test behaviour of fetching movies API to check if it catch errors or fillfull the API target.
