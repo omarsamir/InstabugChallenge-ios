@@ -11,6 +11,7 @@ import UIKit
 class APIClient: NSObject {
   static let shared = APIClient()
   func getMovies(page: Int, completion: @escaping (Movies?,Error?) -> ()) {
+    print("REQUESTING FROM PAGE = " + String(page))
     let urlPath = Constants.MOVIE_DB_BASEURL + String(page)
     let url = URL(string: urlPath)
     var request = URLRequest(url: url!)
@@ -28,4 +29,19 @@ class APIClient: NSObject {
     }
     requestTask.resume()
   }
+  
+  func loadImageFromURL(urlString: String, completion: @escaping (UIImage?,Error?) -> ()){
+      let urlStringNew = urlString.replacingOccurrences(of: " ", with: "%20")
+      URLSession.shared.dataTask(with: NSURL(string: urlStringNew)! as URL, completionHandler: { (data, response, error) -> Void in
+        if error != nil {
+          completion(nil,error)
+        }
+        DispatchQueue.main.async {
+          let image = UIImage(data: data!)
+          completion(image,nil)
+        }
+      }).resume()
+    }
 }
+
+

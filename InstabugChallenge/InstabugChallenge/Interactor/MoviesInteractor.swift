@@ -16,11 +16,13 @@ class MoviesInteractor: NSObject {
   weak var delegate : MoviesInteractorDelegate?
     func getMovies(page: Int) {
       APIClient.shared.getMovies(page: page) { (movies, error) in
-        if error != nil && movies == nil {
-          self.delegate?.display(movies: movies!)
-        }else{
-          self.delegate?.display(error: error!)
+        DispatchQueue.main.async {
+          if error == nil && movies != nil {
+            self.delegate?.display(movies: movies!)
+          }else{
+            self.delegate?.display(error: error!)
+          }
         }
-      }
+     }
   }
 }
