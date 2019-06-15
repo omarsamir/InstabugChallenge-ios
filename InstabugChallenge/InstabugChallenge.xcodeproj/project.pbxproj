@@ -25,7 +25,18 @@
 		84D14DEE22B5096700BAC715 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DED22B5096700BAC715 /* Extentions.swift */; };
 		84D14DF122B5263400BAC715 /* CreateNewMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DEF22B5263400BAC715 /* CreateNewMovieViewController.swift */; };
 		84D14DF222B5263400BAC715 /* CreateNewMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D14DF022B5263400BAC715 /* CreateNewMovieViewController.xib */; };
+		84D14DFA22B555E700BAC715 /* InstabugChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DF922B555E700BAC715 /* InstabugChallengeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D14DFC22B555E700BAC715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 843FBAC322B4227E00A0D0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 843FBACA22B4227E00A0D0EC;
+			remoteInfo = InstabugChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		843FBACB22B4227E00A0D0EC /* InstabugChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstabugChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +59,20 @@
 		84D14DED22B5096700BAC715 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		84D14DEF22B5263400BAC715 /* CreateNewMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMovieViewController.swift; sourceTree = "<group>"; };
 		84D14DF022B5263400BAC715 /* CreateNewMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewMovieViewController.xib; sourceTree = "<group>"; };
+		84D14DF722B555E700BAC715 /* InstabugChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstabugChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D14DF922B555E700BAC715 /* InstabugChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstabugChallengeTests.swift; sourceTree = "<group>"; };
+		84D14DFB22B555E700BAC715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		843FBAC822B4227E00A0D0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D14DF422B555E700BAC715 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				843FBACD22B4227E00A0D0EC /* InstabugChallenge */,
+				84D14DF822B555E700BAC715 /* InstabugChallengeTests */,
 				843FBACC22B4227E00A0D0EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				843FBACB22B4227E00A0D0EC /* InstabugChallenge.app */,
+				84D14DF722B555E700BAC715 /* InstabugChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +166,15 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		84D14DF822B555E700BAC715 /* InstabugChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D14DF922B555E700BAC715 /* InstabugChallengeTests.swift */,
+				84D14DFB22B555E700BAC715 /* Info.plist */,
+			);
+			path = InstabugChallengeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,6 +195,24 @@
 			productReference = 843FBACB22B4227E00A0D0EC /* InstabugChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		84D14DF622B555E700BAC715 /* InstabugChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D14DFE22B555E700BAC715 /* Build configuration list for PBXNativeTarget "InstabugChallengeTests" */;
+			buildPhases = (
+				84D14DF322B555E700BAC715 /* Sources */,
+				84D14DF422B555E700BAC715 /* Frameworks */,
+				84D14DF522B555E700BAC715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D14DFD22B555E700BAC715 /* PBXTargetDependency */,
+			);
+			name = InstabugChallengeTests;
+			productName = InstabugChallengeTests;
+			productReference = 84D14DF722B555E700BAC715 /* InstabugChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +225,10 @@
 				TargetAttributes = {
 					843FBACA22B4227E00A0D0EC = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					84D14DF622B555E700BAC715 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 843FBACA22B4227E00A0D0EC;
 					};
 				};
 			};
@@ -192,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				843FBACA22B4227E00A0D0EC /* InstabugChallenge */,
+				84D14DF622B555E700BAC715 /* InstabugChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +262,13 @@
 				843FBAD422B4227E00A0D0EC /* Main.storyboard in Resources */,
 				84D14DF222B5263400BAC715 /* CreateNewMovieViewController.xib in Resources */,
 				84D14DE422B4640700BAC715 /* MoviesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D14DF522B555E700BAC715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +294,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84D14DF322B555E700BAC715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D14DFA22B555E700BAC715 /* InstabugChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D14DFD22B555E700BAC715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 843FBACA22B4227E00A0D0EC /* InstabugChallenge */;
+			targetProxy = 84D14DFC22B555E700BAC715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		843FBAD222B4227E00A0D0EC /* Main.storyboard */ = {
@@ -406,6 +484,46 @@
 			};
 			name = Release;
 		};
+		84D14DFF22B555E700BAC715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X58266GBM;
+				INFOPLIST_FILE = InstabugChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.instabug.movies.InstabugChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstabugChallenge.app/InstabugChallenge";
+			};
+			name = Debug;
+		};
+		84D14E0022B555E700BAC715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X58266GBM;
+				INFOPLIST_FILE = InstabugChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.instabug.movies.InstabugChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstabugChallenge.app/InstabugChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -423,6 +541,15 @@
 			buildConfigurations = (
 				843FBADE22B4227F00A0D0EC /* Debug */,
 				843FBADF22B4227F00A0D0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D14DFE22B555E700BAC715 /* Build configuration list for PBXNativeTarget "InstabugChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D14DFF22B555E700BAC715 /* Debug */,
+				84D14E0022B555E700BAC715 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
