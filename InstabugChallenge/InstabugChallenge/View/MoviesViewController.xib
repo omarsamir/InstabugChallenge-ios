@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController" customModule="InstabugChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="H5i-mJ-dqH" id="BZT-O0-Wr5"/>
                 <outlet property="moviesTableView" destination="RCl-kY-RW4" id="zPN-0Z-h7s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,11 +26,18 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="H5i-mJ-dqH">
+                    <rect key="frame" x="177" y="627" width="21" height="20"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="H5i-mJ-dqH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="177" id="N6i-cB-a7I"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RCl-kY-RW4" secondAttribute="trailing" id="UYe-Pg-Bt4"/>
                 <constraint firstItem="RCl-kY-RW4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bfa-cm-AfN"/>
+                <constraint firstItem="RCl-kY-RW4" firstAttribute="bottom" secondItem="H5i-mJ-dqH" secondAttribute="bottom" constant="20" id="cqr-hv-QCU"/>
+                <constraint firstItem="H5i-mJ-dqH" firstAttribute="centerX" secondItem="RCl-kY-RW4" secondAttribute="centerX" id="gSA-M9-sO1"/>
                 <constraint firstItem="RCl-kY-RW4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lAu-by-dqu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RCl-kY-RW4" secondAttribute="bottom" id="vVZ-2f-gAB"/>
             </constraints>

@@ -23,7 +23,7 @@ class UIManager: NSObject {
     let tabBarController = UITabBarController()
     let allMoviesVC = UIManager.shared.moviesNavigationController(screenType: .ALL_MOVIES)
     let myMoviesVC = UIManager.shared.moviesNavigationController(screenType: .MY_MOVIES)
-   
+    
     allMoviesVC.tabBarItem = UITabBarItem(title: "All Movies", image: UIImage(named: "allmovies-tabbar-icon"), tag: 0)
     myMoviesVC.tabBarItem = UITabBarItem(title:"My Movies" ,image: UIImage(named: "mymovies-tabbar-icon"), tag: 1)
     let controllers = [allMoviesVC, myMoviesVC]

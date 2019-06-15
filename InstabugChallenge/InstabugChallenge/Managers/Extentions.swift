@@ -13,3 +13,11 @@ extension String {
     return Constants.IMAGES_BASEURL+self
   }
 }
+
+extension Date {
+  func toString() -> String{
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter.string(from: self)
+  }
+}

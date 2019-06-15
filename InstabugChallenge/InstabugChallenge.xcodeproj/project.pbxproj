@@ -23,6 +23,8 @@
 		84D14DEB22B4FEBD00BAC715 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DE922B4FEBD00BAC715 /* MovieTableViewCell.swift */; };
 		84D14DEC22B4FEBD00BAC715 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D14DEA22B4FEBD00BAC715 /* MovieTableViewCell.xib */; };
 		84D14DEE22B5096700BAC715 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DED22B5096700BAC715 /* Extentions.swift */; };
+		84D14DF122B5263400BAC715 /* CreateNewMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D14DEF22B5263400BAC715 /* CreateNewMovieViewController.swift */; };
+		84D14DF222B5263400BAC715 /* CreateNewMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D14DF022B5263400BAC715 /* CreateNewMovieViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		84D14DE922B4FEBD00BAC715 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		84D14DEA22B4FEBD00BAC715 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		84D14DED22B5096700BAC715 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		84D14DEF22B5263400BAC715 /* CreateNewMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewMovieViewController.swift; sourceTree = "<group>"; };
+		84D14DF022B5263400BAC715 /* CreateNewMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewMovieViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				84D14DE222B4640700BAC715 /* MoviesViewController.xib */,
 				84D14DE922B4FEBD00BAC715 /* MovieTableViewCell.swift */,
 				84D14DEA22B4FEBD00BAC715 /* MovieTableViewCell.xib */,
+				84D14DEF22B5263400BAC715 /* CreateNewMovieViewController.swift */,
+				84D14DF022B5263400BAC715 /* CreateNewMovieViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				84D14DEC22B4FEBD00BAC715 /* MovieTableViewCell.xib in Resources */,
 				843FBAD622B4227F00A0D0EC /* Assets.xcassets in Resources */,
 				843FBAD422B4227E00A0D0EC /* Main.storyboard in Resources */,
+				84D14DF222B5263400BAC715 /* CreateNewMovieViewController.xib in Resources */,
 				84D14DE422B4640700BAC715 /* MoviesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +223,7 @@
 				84D14DEE22B5096700BAC715 /* Extentions.swift in Sources */,
 				84D14DE822B46E4B00BAC715 /* UIManager.swift in Sources */,
 				843FBAE722B42A2F00A0D0EC /* APIClient.swift in Sources */,
+				84D14DF122B5263400BAC715 /* CreateNewMovieViewController.swift in Sources */,
 				843FBAE922B42AFD00A0D0EC /* Constants.swift in Sources */,
 				843FBAEC22B445A800A0D0EC /* Results.swift in Sources */,
 				84D14DE322B4640700BAC715 /* MoviesViewController.swift in Sources */,

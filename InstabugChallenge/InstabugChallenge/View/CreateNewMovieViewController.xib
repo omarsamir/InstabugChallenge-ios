@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewMovieViewController" customModule="InstabugChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="addMyMovie" destination="iqg-dY-78X" id="3Iv-Wy-rl1"/>
+                <outlet property="movieDatePicker" destination="dep-Lm-DnN" id="ExF-Bf-gca"/>
+                <outlet property="myMovieImage" destination="Bg6-0X-D5P" id="i4u-xE-6TX"/>
+                <outlet property="myMovieOverview" destination="zMO-z9-tTp" id="in1-v2-FoO"/>
+                <outlet property="myMovieTitle" destination="fp6-iA-lzb" id="Bxo-Ud-uyH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bg6-0X-D5P">
+                    <rect key="frame" x="16" y="52" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="UC2-vS-HpN"/>
+                        <constraint firstAttribute="width" secondItem="Bg6-0X-D5P" secondAttribute="height" id="yTI-Hm-BSj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOr-8M-ZTQ">
+                    <rect key="frame" x="191" y="52" width="72" height="30"/>
+                    <state key="normal" title="Add Photo"/>
+                    <connections>
+                        <action selector="addPhotoFromGallary:" destination="-1" eventType="touchUpInside" id="6lm-gw-aTx"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fp6-iA-lzb">
+                    <rect key="frame" x="16" y="210" width="344" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zMO-z9-tTp">
+                    <rect key="frame" x="16" y="273" width="344" height="143"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="143" id="3ET-Cr-VEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aY-DD-eJv">
+                    <rect key="frame" x="16" y="250" width="72" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqg-dY-78X">
+                    <rect key="frame" x="16" y="532" width="344" height="30"/>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="addMovie:" destination="-1" eventType="touchUpInside" id="dzM-OB-Adm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLN-SS-s4e">
+                    <rect key="frame" x="16" y="426" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dep-Lm-DnN">
+                    <rect key="frame" x="16" y="449" width="344" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="S87-6b-Hlt"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="582305300.97883797">
+                        <!--2019-06-15 15:28:20 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bg6-0X-D5P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="3Kn-8h-yIp"/>
+                <constraint firstItem="iqg-dY-78X" firstAttribute="trailing" secondItem="zMO-z9-tTp" secondAttribute="trailing" id="3RX-I3-GZe"/>
+                <constraint firstItem="zMO-z9-tTp" firstAttribute="top" secondItem="5aY-DD-eJv" secondAttribute="bottom" constant="2" id="6gR-3K-ts9"/>
+                <constraint firstItem="tLN-SS-s4e" firstAttribute="top" secondItem="zMO-z9-tTp" secondAttribute="bottom" constant="10" id="8I1-4W-Awu"/>
+                <constraint firstItem="iqg-dY-78X" firstAttribute="leading" secondItem="zMO-z9-tTp" secondAttribute="leading" id="CBD-lt-aoB"/>
+                <constraint firstItem="fp6-iA-lzb" firstAttribute="leading" secondItem="Bg6-0X-D5P" secondAttribute="leading" id="K0g-AA-5fC"/>
+                <constraint firstItem="zMO-z9-tTp" firstAttribute="leading" secondItem="5aY-DD-eJv" secondAttribute="leading" id="QEb-lQ-2Uq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fp6-iA-lzb" secondAttribute="trailing" constant="15" id="W4F-sX-f9w"/>
+                <constraint firstItem="fp6-iA-lzb" firstAttribute="top" secondItem="Bg6-0X-D5P" secondAttribute="bottom" constant="8" id="W5B-Bo-3fO"/>
+                <constraint firstItem="dep-Lm-DnN" firstAttribute="top" secondItem="tLN-SS-s4e" secondAttribute="bottom" constant="2" id="Wgg-1f-CPr"/>
+                <constraint firstItem="Bg6-0X-D5P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XBI-HB-QCc"/>
+                <constraint firstItem="tLN-SS-s4e" firstAttribute="leading" secondItem="zMO-z9-tTp" secondAttribute="leading" id="YyJ-1f-oZf"/>
+                <constraint firstItem="5aY-DD-eJv" firstAttribute="top" secondItem="fp6-iA-lzb" secondAttribute="bottom" constant="10" id="b3B-F0-LsI"/>
+                <constraint firstItem="EOr-8M-ZTQ" firstAttribute="leading" secondItem="Bg6-0X-D5P" secondAttribute="trailing" constant="25" id="d72-G8-IdY"/>
+                <constraint firstItem="zMO-z9-tTp" firstAttribute="trailing" secondItem="fp6-iA-lzb" secondAttribute="trailing" id="e1R-vg-BdS"/>
+                <constraint firstItem="dep-Lm-DnN" firstAttribute="trailing" secondItem="zMO-z9-tTp" secondAttribute="trailing" id="hv3-6C-l1g"/>
+                <constraint firstItem="5aY-DD-eJv" firstAttribute="leading" secondItem="fp6-iA-lzb" secondAttribute="leading" id="hvU-wx-KdS"/>
+                <constraint firstItem="dep-Lm-DnN" firstAttribute="leading" secondItem="zMO-z9-tTp" secondAttribute="leading" id="oUL-SW-DF4"/>
+                <constraint firstItem="EOr-8M-ZTQ" firstAttribute="top" secondItem="Bg6-0X-D5P" secondAttribute="top" id="uI9-T2-mdq"/>
+                <constraint firstItem="zMO-z9-tTp" firstAttribute="leading" secondItem="fp6-iA-lzb" secondAttribute="leading" id="vxu-iv-kmQ"/>
+                <constraint firstItem="iqg-dY-78X" firstAttribute="top" secondItem="dep-Lm-DnN" secondAttribute="bottom" constant="7" id="xUl-5Y-0a6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
