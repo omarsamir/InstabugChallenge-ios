@@ -14,7 +14,7 @@ This task is to make a UItableView displays movies from API moreover, user can u
 - APIClient: handle all network methods (API Calls) and parsing by implementing Codable methods.
 - UIManager: handle main UI methods (Application TabbarViewController, RootView and UIALerts).
 
-#Other Files
+# Other Files
 - Extentions: handle categories of cocoa framework models.
 - Constants: contains all needed constants.
   
