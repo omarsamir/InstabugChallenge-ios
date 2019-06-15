@@ -9,6 +9,7 @@ This task is to make a UItableView displays movies from API moreover, user can u
     - View : 2 Classes `MoviesViewController` (Main View) and  `CreateNewMovieViewController` (Add movie)
     - Interactor : 1 Class `MoviesInteractor`, It Contains all business methods
     -  Entity : It owns all models needed `Movies`and`Results`.
+    -  Note: because of application simplicity there is no need to presenter and router layers it wouldn't add value in bussiness.
 
 # Managers
 - APIClient: handle all network methods (API Calls) and parsing by implementing Codable methods.
@@ -20,3 +21,6 @@ This task is to make a UItableView displays movies from API moreover, user can u
 
 # Unit testing 
 Simple unit test method to test behaviour of fetching movies API to check if it catch errors or fillfull the API target.
+
+# ChangeLog 
+Find all feature commits in generated file CHANGELOG.md (Simple release notes)
