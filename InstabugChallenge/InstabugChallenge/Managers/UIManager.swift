@@ -30,4 +30,9 @@ class UIManager: NSObject {
     tabBarController.viewControllers = controllers
     return tabBarController
   }
+  
+  func errorAlert(errorMessage: String) -> UIAlertController{
+    let errorAlert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+    return errorAlert
+  }
 }

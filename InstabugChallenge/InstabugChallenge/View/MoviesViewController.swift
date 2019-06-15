@@ -89,6 +89,7 @@ extension MoviesViewController: UITableViewDataSource{
 }
 
 extension MoviesViewController: MoviesInteractorDelegate {
+ 
   func display(movies: Movies) {
     self.activityIndicator.isHidden = true
     self.moviesList += movies.results ?? Array()
@@ -96,8 +97,7 @@ extension MoviesViewController: MoviesInteractorDelegate {
   }
   
   func display(error: Error) {
-    
+    self.present(UIManager.shared.errorAlert(errorMessage: error.localizedDescription), animated: true, completion: nil)
   }
-  
   
 }

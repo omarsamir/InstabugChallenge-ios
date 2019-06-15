@@ -38,7 +38,6 @@ class CreateNewMovieViewController: UIViewController {
         APIClient.shared.myMoviesArray.append(myMovie)
         self.navigationController?.popViewController(animated: true)
   }
-  
 }
   
 extension CreateNewMovieViewController: UIImagePickerControllerDelegate,UINavigationControllerDelegate {
