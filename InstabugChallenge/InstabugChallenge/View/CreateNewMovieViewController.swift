@@ -20,9 +20,14 @@ class CreateNewMovieViewController: UIViewController {
   override func viewDidLoad() {
         super.viewDidLoad()
         myMovie.is_offline = true
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+    self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
     }
-  
+  @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+    myMovieTitle.resignFirstResponder()
+    myMovieOverview.resignFirstResponder()
+  }
   @IBAction func addPhotoFromGallary(_ sender: Any) {
     let myPickerController = UIImagePickerController()
     myPickerController.delegate = self
